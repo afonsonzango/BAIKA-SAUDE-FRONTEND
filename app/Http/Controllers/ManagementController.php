@@ -13,10 +13,12 @@ use Illuminate\Support\Facades\Crypt;
 
 class ManagementController extends Controller
 {
-    //
     public function login(){
-
         return view('auth.login');
+    }
+
+    public function appointment() {
+        return view('client.make_appointment');
     }
 
     public function authentication(Request $request){

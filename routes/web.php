@@ -25,6 +25,7 @@ Route::middleware(['guest'])->group(function(){
     Route::get('/login', [ManagementController::class, 'login'])->name('login');
     Route::post('/login', [ManagementController::class, 'authentication'])->name('auth');
 
+    Route::get('/appointment', [ManagementController::class, 'appointment'])->name('appointment');
     Route::get('/especialidades-hospital/{id}', [ClientController::class, 'categoryHealthUnity'])->name('categoryHealthUnity');
     Route::get('/especialistas/{especiality}/{health}', [ClientController::class, 'specialistHealthUnity'])->name('specialistHealthUnity');
     Route::get('/noticias', [ClientController::class, 'news'])->name('news');
