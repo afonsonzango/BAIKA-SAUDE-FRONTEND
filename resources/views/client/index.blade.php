@@ -4,6 +4,59 @@
 @section('title', 'Baika + Saúde')
 
 @section('content')
+
+<section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url({{asset('')}}client/assets/img/slide/slide-1.png)">
+          <div class="container">
+            <h2>Bem vindos ao  <span>Baika + Saúde</span></h2>
+            <p>A primeira plataforma 100% angolana de Telemedicina, Assistência Médica domiciliar, cadastramento e registo  de dados clínicos.</p>
+            <a href="#about" class="btn-get-started scrollto">Saiba mais</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url({{asset('')}}client/assets/img/slide/slide-2.png)">
+          <div class="container">
+            <h2>Conexão com Profissionais de Saúde </h2>
+            <p>Facilitamos o acesso dos usuários a unidades e profissionais de saúde como médicos, enfermeiros, fisioterapeutas, psicólogos e terapeutas, através de consultas online, assistência domiciliar e agendamento de consultas.
+              .</p>
+            <a href="#about" class="btn-get-started scrollto">Ler mais</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url({{asset('')}}client/assets/img/slide/slide-3.png)">
+          <!--<div class="container">
+            <h2>Plataforma híbrida</h2>
+            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
+            <a href="#about" class="btn-get-started scrollto">Read More</a>-->
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+
+
+
+
 <!-- ======= Featured Services Section ======= -->
 <section id="featured-services" class="featured-services">
   <div class="container" data-aos="fade-up">
@@ -213,179 +266,11 @@
         Receba lembretes automáticos por e-mail ou SMS para garantir que você nunca perca uma consulta.</p>
     </div>
 
-    <form action="{{route('make_appointment')}}" method="POST" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-        @csrf
-
-        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-            
-
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-md-4 form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="*Nome" required>
-                        </div>
-                        {{--<div class="col-md-4 form-group mt-3 mt-md-0">
-                        <input type="card" class="form-control" name="card" id="card_id" placeholder="Bilhete de identidade ou passaporte" required>
-                        </div>--}}
-                        <div class="col-md-4 form-group mt-3 mt-md-0">
-                        <input type="tel" class="form-control" name="phone" id="phone" placeholder="*Número" required>
-                        </div>
-                        <div class="col-md-4 form-group mt-3 mt-md-0">
-                            <input type="text" class="form-control" name="age" id="card id" placeholder="Idade">
-                        </div>
-                    </div>
-                    <div class="row">
-
-                        <div class="col-md-4 form-group mt-3">
-                        <select name="health_unit" id="health_unit" class="form-select">
-                            <option value="">*Unidades disponíveis</option>
-                            @foreach ($health_units as $health_unit)
-                            <option value="{{$health_unit['id']}}" data-role="{{$health_unit['category_id']}}">{{$health_unit["name"]}}</option>
-                            @endforeach
-
-                        </select>
-                        </div>
-                        <div class="col-md-4 form-group mt-3 div-esp" id="div-esp">
-                        <select name="especialty" id="especialty" class="form-select">
-
-                        </select>
-                        </div>
-                        <div class="col-md-4 form-group mt-3 div-prof" id="div-prof">
-                        <select name="professional_id" id="professional_id" class="form-select">
-
-                        </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
-                    </div>
-
-                </div>
-
-                <div class="carousel-item">
-                    <div class="container mb-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                {{--<div class="d-md-flex justify-content-center mb-1">
-                                    <a class="btn text-white" style="width: 60%;background: #3fbbc0;" data-bs-toggle="modal" data-bs-target="#modalTable">Ver o quadro de atendimento</a>
-
-                                </div>--}}
-                                <div class="elegant-calencar d-md-flex">
-                                    <div class="wrap-header d-flex align-items-center" style="background: #3fbbc0;">
-                                        <p id="reset">Iniciar</p>
-                                        <div id="header" class="p-0">
-                                            <div class="pre-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-left"></i></div>
-                                            <div class="head-info" style="background: #3fbbc0;">
-                                                <div class="head-day"></div>
-                                                <div class="head-month"></div>
-                                            </div>
-                                        <div class="next-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-right"></i></div>
-                                    </div>
-                                </div>
-                            <div class="calendar-wrap">
-                                <table id="calendar">
-                                <thead>
-                                    <tr>
-                                        <th>Domingo</th>
-                                        <th>Sengunda</th>
-                                        <th>Terça</th>
-                                        <th>Quarta</th>
-                                        <th>Quinta</th>
-                                        <th>Sexta</th>
-                                        <th>Sábado</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                </tr>
-                                <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                </tr>
-                                <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                </tr>
-                                <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                </tr>
-                                <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                </tr>
-                                <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                </tr>
-                                </tbody>
-                                </table>
-                            </div>
-                            </div>
-                            </div>
-                        </div>
-
-                        <div class="my-3">
-                            <div class="loading">Carregando</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Sua solicitação foi enviada com sucesso. Obrigado!</div>
-                        </div>
-                        {{--<div class="text-center"><button type="submit">Marcar agora</button></div>--}}
-                    </div>
-
-                </div>
-
-            </div>
-            <div style="display: flex;" class="mb-3">
-              <button class="carousel-control-prev carousel-control-prev2 btn p-1" type="button" style="background-color: #3fbbc0;" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="{{--visually-hidden--}}">Voltar</span>
-              </button>
-              <button class="carousel-control-next carousel-control-next2 btn p-1" style="background-color: #3fbbc0;" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                  <span class="{{--visually-hidden--}}">Seguinte</span>
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-              </button>
-          </div>
-        </div>
-
-
-    </form>
-
+    <div class="make_appointment_division">
+      <a href="/appointment">
+        Fazer marcacao, agora!
+      </a>
+    </div>
   </div>
 </section><!-- End Appointment Section -->
 

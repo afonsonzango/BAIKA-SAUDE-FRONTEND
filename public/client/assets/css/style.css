@@ -1797,3 +1797,62 @@ section {
   text-align: center;
   font-size: 13px;
 }
+
+.make_appointment_division {
+  display: flex;
+  justify-content: center;
+}
+
+.make_appointment_division a {
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 30px;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #3fbbc0;
+}
+
+.section_markable {
+  width: 1100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 90px;
+}
+
+@media (max-width: 1199px) {
+  .section_markable {
+    width: 935px;
+  }
+}
+
+@media (max-width: 991px) {
+  .section_markable {
+    margin-top: 100px;
+    width: 100%;
+    padding: 0 20px;
+  }   
+}
+
+.section_markable .scripts_element {
+  margin-bottom: 20px;
+}
+
+.section_markable .scripts_element h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.section_markable .scripts_element p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.section_markable * {
+  box-shadow: none !important;
+}
+
+.section_markable span.important {
+  color: red;
+  font-weight: 600;
+}

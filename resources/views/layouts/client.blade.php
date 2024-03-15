@@ -85,7 +85,7 @@
   </div>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top" style="position: fixed; top: 0">
     <div class="container d-flex align-items-center">
 
       <a href="{{route('init')}}" class="logo me-auto"><img src="{{asset('')}}client/assets/img/logo.png" alt=""></a>
@@ -113,54 +113,6 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-      <div class="carousel-inner" role="listbox">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url({{asset('')}}client/assets/img/slide/slide-1.png)">
-          <div class="container">
-            <h2>Bem vindos ao  <span>Baika + Saúde</span></h2>
-            <p>A primeira plataforma 100% angolana de Telemedicina, Assistência Médica domiciliar, cadastramento e registo  de dados clínicos.</p>
-            <a href="#about" class="btn-get-started scrollto">Saiba mais</a>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url({{asset('')}}client/assets/img/slide/slide-2.png)">
-          <div class="container">
-            <h2>Conexão com Profissionais de Saúde </h2>
-            <p>Facilitamos o acesso dos usuários a unidades e profissionais de saúde como médicos, enfermeiros, fisioterapeutas, psicólogos e terapeutas, através de consultas online, assistência domiciliar e agendamento de consultas.
-              .</p>
-            <a href="#about" class="btn-get-started scrollto">Ler mais</a>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url({{asset('')}}client/assets/img/slide/slide-3.png)">
-          <!--<div class="container">
-            <h2>Plataforma híbrida</h2>
-            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
-            <a href="#about" class="btn-get-started scrollto">Read More</a>-->
-          </div>
-        </div>
-
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
-
-    </div>
-  </section><!-- End Hero -->
-
   <main id="main">
 
     @yield('content')
