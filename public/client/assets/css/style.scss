@@ -5,6 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -63,10 +64,12 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -108,6 +111,7 @@ h6 {
     transition-delay: 0 !important;
   }
 }
+
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
@@ -147,6 +151,7 @@ h6 {
     padding: 15px 0;
   }
 }
+
 #header.header-scrolled {
   top: 0;
 }
@@ -195,6 +200,7 @@ h6 {
     padding: 6px 15px;
   }
 }
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -242,7 +248,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover > a {
+.navbar li:hover>a {
   color: #3fbbc0;
 }
 
@@ -277,11 +283,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
+.navbar .dropdown ul li:hover>a {
   color: #3fbbc0;
 }
 
-.navbar .dropdown:hover > ul {
+.navbar .dropdown:hover>ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -293,7 +299,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover > ul {
+.navbar .dropdown .dropdown:hover>ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -304,10 +310,12 @@ h6 {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
-  .navbar .dropdown .dropdown:hover > ul {
+
+  .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
 }
+
 /**
 * Mobile Navigation 
 */
@@ -328,10 +336,12 @@ h6 {
   .mobile-nav-toggle {
     display: block;
   }
+
   .navbar ul {
     display: none;
   }
 }
+
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -373,7 +383,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover > a {
+.navbar-mobile li:hover>a {
   color: #3fbbc0;
 }
 
@@ -403,11 +413,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul li:hover>a {
   color: #3fbbc0;
 }
 
-.navbar-mobile .dropdown > .dropdown-active {
+.navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
 
@@ -457,6 +467,7 @@ h6 {
     margin-right: 50px;
   }
 }
+
 #hero h2 {
   color: #2f2f2f;
   margin-bottom: 20px;
@@ -559,26 +570,32 @@ h6 {
   #hero {
     height: 100vh;
   }
+
   #hero .container {
     margin-top: 100px;
   }
 }
+
 @media (max-width: 768px) {
   #hero h2 {
     font-size: 28px;
   }
 }
+
 @media (min-width: 1024px) {
+
   #hero .carousel-control-prev,
   #hero .carousel-control-next {
     width: 5%;
   }
 }
+
 @media (max-height: 500px) {
   #hero {
     height: 160vh;
   }
 }
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -635,6 +652,7 @@ section {
     margin-top: 70px;
   }
 }
+
 .breadcrumbs h2 {
   font-size: 24px;
   font-weight: 300;
@@ -646,6 +664,7 @@ section {
     margin: 0 0 10px 0;
   }
 }
+
 .breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
@@ -655,11 +674,11 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li + li {
+.breadcrumbs ol li+li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li + li::before {
+.breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
   color: #6c757d;
@@ -670,13 +689,16 @@ section {
   .breadcrumbs .d-flex {
     display: block !important;
   }
+
   .breadcrumbs ol {
     display: block;
   }
+
   .breadcrumbs ol li {
     display: inline-block;
   }
 }
+
 /*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
@@ -977,7 +999,7 @@ section {
   font-weight: 600;
 }
 
-.appointment .php-email-form .error-message br + br {
+.appointment .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -1103,6 +1125,7 @@ section {
     max-width: 100%;
   }
 }
+
 .departments .tab-pane h3 {
   font-size: 26px;
   font-weight: 600;
@@ -1122,10 +1145,12 @@ section {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -1322,6 +1347,7 @@ section {
   .gallery .swiper-wrapper {
     padding: 40px 0;
   }
+
   .gallery .swiper-slide-active {
     border: 6px solid #3fbbc0;
     padding: 4px;
@@ -1331,6 +1357,7 @@ section {
     margin-top: 10px;
   }
 }
+
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
@@ -1552,7 +1579,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -1621,10 +1648,12 @@ section {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1796,6 +1825,7 @@ section {
     width: 935px;
   }
 }
+
 @media (max-width: 991px) {
   .section_markable {
     margin-top: 100px;
@@ -1803,6 +1833,7 @@ section {
     padding: 0 20px;
   }
 }
+
 .section_markable .scripts_element {
   margin-bottom: 20px;
 }
@@ -1824,4 +1855,4 @@ section {
 .section_markable span.important {
   color: red;
   font-weight: 600;
-}/*# sourceMappingURL=style.css.map */
+}

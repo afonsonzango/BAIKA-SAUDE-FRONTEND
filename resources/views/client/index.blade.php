@@ -54,9 +54,6 @@
   </section><!-- End Hero -->
 
 
-
-
-
 <!-- ======= Featured Services Section ======= -->
 <section id="featured-services" class="featured-services">
   <div class="container" data-aos="fade-up">
@@ -68,13 +65,9 @@
         <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
           <div class="icon"><i class="fas fa-heartbeat"></i></div>
           <h4 class="title"><a href="">HOSPITAIS</a></h4>
-          <p class style="text-align: justify;"="description">✨ Equipe de Profissionais Dedicados
-            Nossos médicos, enfermeiros e equipes de apoio trabalham incansavelmente para garantir que você receba o melhor tratamento possível.
 
-            <p class="description"> 🌟 Tecnologia de Ponta
-            Investimos em tecnologia de última geração para diagnóstico preciso e tratamentos eficazes.
-
-
+          <p class="description">✨ Equipe de Profissionais Dedicados Nossos médicos, enfermeiros e equipes de apoio trabalham incansavelmente para garantir que você receba o melhor tratamento possível.</p>
+          <p class="description">🌟 Tecnologia de Ponta Investimos em tecnologia de última geração para diagnóstico preciso e tratamentos eficazes.</p>
         </div>
       </div>
 
@@ -82,8 +75,8 @@
         <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
           <div class="icon"><i class="fas fa-pills"></i></div>
           <h4 class="title"><a href="">CLÍNICAS</a></h4>
-          <p class style="text-align: justify">✨ Consultas com Especialistas
-            Nossos médicos altamente qualificados estão à disposição para abordar suas preocupações de saúde e oferecer orientações especializadas.</p>
+          <p class="description">✨ Consultas com Especialistas</p>
+          <p class="description">Nossos médicos altamente qualificados estão à disposição para abordar suas preocupações de saúde e oferecer orientações especializadas.</p>
         </div>
       </div>
 
@@ -91,8 +84,8 @@
         <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
           <div class="icon"><i class="fas fa-thermometer"></i></div>
           <h4 class="title"><a href="">LABORATÓRIOS DE ANÁLISES CLÍNICAS</a></h4>
-          <p class style="text-align: justify;"="description">✨ Exames Precisos
-            Nossos profissionais altamente qualificados realizam exames com precisão, garantindo que você tenha informações confiáveis para tomar decisões informadas sobre sua saúde.</p>
+          <p class="description">✨ Exames Precisos </p>
+          <p class="description">Nossos profissionais altamente qualificados realizam exames com precisão, garantindo que você tenha informações confiáveis para tomar decisões informadas sobre sua saúde.</p>
         </div>
       </div>
 
@@ -100,17 +93,17 @@
         <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
           <div class="icon"><i class="fas fa-dna"></i></div>
           <h4 class="title"><a href="">CENTROS OFTALMOLÓGICOS</a></h4>
-          <p class style="text-align: justify;"="description">✨ Consultas oftalmológicas completas.
-            <p class="description"> ✨ Exames de vista precisos e inovadores.
-              <p class="description">✨ Tratamentos para diversas condições oculares.
-                <p class="description">✨ Cirurgias oftalmológicas avançadas.</p>
+          
+          <p class="description">✨ Consultas oftalmológicas completas.
+          <p class="description"> ✨ Exames de vista precisos e inovadores.</p>
+          <p class="description">✨ Tratamentos para diversas condições oculares.</p>
+          <p class="description">✨ Cirurgias oftalmológicas avançadas.</p>
         </div>
       </div>
-
     </div>
-
   </div>
-</section><!-- End Featured Services Section -->
+</section><!-- End Featured Services Section -->  
+
 
 <!-- ======= About Us Section ======= -->
 <section id="about" class="about">

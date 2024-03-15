@@ -13,7 +13,7 @@
         </p>
     </div>
 
-    <form action="{{route('make_appointment')}}" method="POST" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+    <form action="{{route('make_appointment')}}" method="POST" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="0">
         @csrf
 
         <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
